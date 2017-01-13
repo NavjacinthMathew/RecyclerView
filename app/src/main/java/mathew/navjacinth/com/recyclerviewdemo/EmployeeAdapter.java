@@ -15,17 +15,15 @@ import java.util.ArrayList;
 
 public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeAdapter.EmployeeViewHolder> {
 
-    private Context context;
     private ArrayList<Employee> dataList;
 
-    public EmployeeAdapter(Context context, ArrayList<Employee> dataList) {
-        this.context = context;
+    public EmployeeAdapter(ArrayList<Employee> dataList) {
         this.dataList = dataList;
     }
 
     @Override
     public EmployeeViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.row_employee, parent, false);
         return new EmployeeViewHolder(view);
     }

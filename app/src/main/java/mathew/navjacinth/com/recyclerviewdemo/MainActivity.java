@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
         employeeArrayList.add(new Employee("Employee4", "emp4@example.com", "321654987"));
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        adapter = new EmployeeAdapter(MainActivity.this, employeeArrayList);
+
+        adapter = new EmployeeAdapter(employeeArrayList);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
 
