@@ -5,24 +5,14 @@ package mathew.navjacinth.com.recyclerviewdemo;
  */
 
 public class Employee {
-    private int employeeImage;
     private String employeeName;
     private String employeeEmail;
     private String employeePhone;
 
-    public Employee(int employeeImage, String employeeName, String employeeEmail, String employeePhone) {
-        this.employeeImage = employeeImage;
+    public Employee(String employeeName, String employeeEmail, String employeePhone) {
         this.employeeName = employeeName;
         this.employeeEmail = employeeEmail;
         this.employeePhone = employeePhone;
-    }
-
-    public int getEmployeeImage() {
-        return employeeImage;
-    }
-
-    public void setEmployeeImage(int employeeImage) {
-        this.employeeImage = employeeImage;
     }
 
     public String getEmployeeName() {
